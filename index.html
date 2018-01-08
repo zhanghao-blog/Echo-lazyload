@@ -19,11 +19,11 @@
 			text-align: center;
 		}
 	</style>
+	<script src="js/echoM.js"></script>
 </head>
 <body>
 	<h1>超轻量图片懒加载库Echo.js演示demo</h1>
 	<div class="demo">
-		
 		<img src="img/blank.gif" alt="" data-echo="img/1.jpg">
 		<img src="img/blank.gif" alt="" data-echo="img/2.jpg">
 		<img src="img/blank.gif" alt="" data-echo="img/3.jpg">
@@ -49,7 +49,7 @@
 	<script>
 		Echo.init({
 			offset: 100,   // 离可视区域多少像素的图片可以被加载,默认值为0.
-			throttle: 1000,  // 图片延迟多少毫秒加载
+			throttle: 500,  // 图片延迟多少毫秒加载
 			unload: false,	// 告诉echo是加载还是卸载视图中的图片，当图片离开视图区域时触发
 			debounce: true, // 防抖动 设不设无所谓
 			callback: function(element, op){  // 回调函数，用来检测图片是否加载
